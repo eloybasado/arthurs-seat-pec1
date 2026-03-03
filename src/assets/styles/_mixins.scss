@@ -1,7 +1,9 @@
 @use "variables" as *;
 
+@use "sass:math";
+
 @function rem($px) {
-  @return calc($px / 16) * 1rem;
+  @return math.div($px, 16) * 1rem;
 }
 
 @mixin respond($breakpoint) {
