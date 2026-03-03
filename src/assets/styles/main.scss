@@ -3,17 +3,22 @@
  * Do not include SCSS code in this file.
  */
 
-/**
- * Import dependencies
- */
+/* Dependencies */
 @use "dependencies";
 
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
+/* SMACSS: Base */
+@use "variables";
+@use "mixins";
+@use "reset";
+@use "base";
+@use "typography";
 
-@use "layouts/home";
+/* SMACSS: Layout */
+@use "layout";
+
+/* SMACSS: Modules */
+@use "sections";
+@use "components";
 
 /**
  * Do NOT include anything else in this file!

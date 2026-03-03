@@ -1,0 +1,33 @@
+@use "variables" as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: $spacing-sm;
+  font-family: $font-serif;
+  color: $color-text;
+}
+
+p {
+  margin-bottom: $spacing-sm;
+  line-height: 1.6;
+  color: $color-text-muted;
+}
+
+a {
+  color: $color-secondary;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+button {
+  font-family: $font-sans;
+  cursor: pointer;
+}

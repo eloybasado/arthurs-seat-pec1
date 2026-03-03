@@ -1,0 +1,32 @@
+@use "variables" as *;
+
+header {
+  padding: $spacing-md 0;
+  color: white;
+  text-align: center;
+  background: rgba($color-primary, 0.82);
+  border-bottom: 1px solid rgba($color-secondary, 0.24);
+
+  p {
+    margin-bottom: 0;
+    color: $color-text-muted;
+  }
+}
+
+footer {
+  padding: $spacing-md 0;
+  font-size: 0.9rem;
+  color: $color-text-muted;
+  text-align: center;
+  background: rgba($color-primary, 0.72);
+  border-top: 1px solid rgba($color-secondary, 0.2);
+}
+
+main {
+  padding-bottom: $spacing-xl;
+}
+
+.container {
+  width: min(92%, $container-max);
+  margin: 0 auto;
+}

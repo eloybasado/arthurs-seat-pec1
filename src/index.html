@@ -1,36 +1,69 @@
 <!doctype html>
-
-<html>
+<html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-    <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arthur’s Seat - Edinburgh</title>
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
+    <include src="views/header.html"></include>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Descubre Arthur’s Seat</h2>
+          <p>Una experiencia natural en el corazón de Edimburgo</p>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="container">
+          <h2>¿Qué es Arthur’s Seat?</h2>
+          <p>
+            Arthur’s Seat es una antigua formación volcánica situada en Holyrood
+            Park, ofreciendo una de las mejores vistas panorámicas de la ciudad
+            de Edimburgo.
+          </p>
+          <a href="#mapa" class="btn">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            Ver ubicación
+          </a>
+        </div>
+      </section>
+
+      <section class="gallery container">
         <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
+          src="./assets/images/gallery1.jpg"
+          alt="Vista desde Arthur’s Seat"
         />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script>
-    <!-- do not remove this line! -->
+        <img src="./assets/images/gallery2.jpg" alt="Sendero hacia la cima" />
+        <img src="./assets/images/gallery3.jpg" alt="Panorámica de Edimburgo" />
+      </section>
+
+      <section class="map container" id="mapa">
+        <h2>Ubicación</h2>
+        <iframe
+          src="https://www.google.com/maps?q=Arthur%27s%20Seat%2C%20Edinburgh&output=embed"
+          title="Mapa de Arthur's Seat en Edimburgo"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+        <p class="map-link">
+          <a
+            href="https://www.google.com/maps/place/Arthur's+Seat/@55.9444265,-3.1612052,15z"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+            Abrir en Google Maps
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <include src="views/footer.html"></include>
   </body>
 </html>
