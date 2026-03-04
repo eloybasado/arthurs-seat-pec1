@@ -83,7 +83,7 @@
 .map {
   max-width: rem(940);
   padding: $spacing-md;
-  margin: $spacing-lg 0;
+  margin: $spacing-lg auto;
   background: rgba($color-surface-soft, 0.92);
   border: 1px solid rgba($color-secondary, 0.24);
   border-radius: $radius-md;
@@ -114,10 +114,5 @@
         margin-right: 0.4rem;
       }
     }
-  }
-
-  @include respond(md) {
-    margin-right: auto;
-    margin-left: auto;
   }
 }
